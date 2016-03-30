@@ -28,7 +28,13 @@ public class Application {
         final TypeSafeConfiguration typeSafeConfiguration = ctx.getBean(TypeSafeConfiguration.class);
         final AnnotationConfiguration annotationConfiguration = ctx.getBean(AnnotationConfiguration.class);
 
-        System.out.println(typeSafeConfiguration);
-        System.out.println(annotationConfiguration.toString());
+        info("Application initialized with the following configuration:");
+        info(typeSafeConfiguration.toString());
+        info(annotationConfiguration.toString());
+        System.out.println();
+    }
+
+    private static void info(String text) {
+        System.out.println(String.format("Application.java: %s", text));
     }
 }
