@@ -21,16 +21,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class AnnotationConfiguration {
 
-    @Value("${example.property-name ?: not set}")
+    @Value("${example.property-name ?:not set}")
     public String propertyDashName;
 
-    @Value("${example.property.name ?: not set}")
+    @Value("${example.property.name ?:not set}")
     public String propertyPointName;
 
-    @Value("${example.propertyName ?: not set}")
+    @Value("${example.propertyName ?:not set}")
     public String propertyName;
     
-    @Value("${example.propertyname ?: not set}")
+    @Value("${example.propertyname ?:not set}")
     public String propertyname;
 
     @Override
