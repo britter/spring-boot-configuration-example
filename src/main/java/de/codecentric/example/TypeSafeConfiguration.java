@@ -54,7 +54,7 @@ public class TypeSafeConfiguration {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("MyConfiguration{");
+        final StringBuilder sb = new StringBuilder("TypeSafeConfiguration{");
         sb.append("propertyName='").append(propertyName).append('\'');
         sb.append(", propertyname='").append(propertyname).append('\'');
         sb.append(", property_name='").append(property_name).append('\'');
