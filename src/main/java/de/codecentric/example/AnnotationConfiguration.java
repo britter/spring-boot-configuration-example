@@ -33,6 +33,9 @@ public class AnnotationConfiguration {
     @Value("${example.propertyname:not set}")
     public String propertyname;
 
+    @Value("${example.property_name:not set}")
+    public String property_name;
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("AnnotationConfiguration{");
@@ -40,6 +43,7 @@ public class AnnotationConfiguration {
         sb.append(", propertyPointName='").append(propertyPointName).append('\'');
         sb.append(", propertyName='").append(propertyName).append('\'');
         sb.append(", propertyname='").append(propertyname).append('\'');
+        sb.append(", property_name='").append(property_name).append('\'');
         sb.append('}');
         return sb.toString();
     }
