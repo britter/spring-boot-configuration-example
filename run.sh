@@ -12,6 +12,7 @@ write_properties_file() {
 mkdir -p ${project_dir}/src/main/resources
 
 cat > ${properties_file} << EOF
+example.property.name=example.property.name
 example.property-name=example.property-name
 example.property_name=example.property_name
 example.propertyname=example.propertyname
